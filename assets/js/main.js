@@ -1,69 +1,59 @@
-// const profileText = new Promise(function(resolve, reject){
-//   resolve(window.addEventListener("DOMContentLoaded", (event) => {
-//     var i = 0;
-//     var j = 0;
-//     var animateText = "Jonghyun Kang";
-//     var animateP = "Welcome to this page";
-//     var speed = 150;
-  
-//     function typeWriter() {
-//       if (i < animateText.length) {
-//         document.querySelector(".typewritter").innerHTML += animateText.charAt(i);
-//         i++;
-//         setTimeout(typeWriter, speed);
-//       } else {
-//         textWriter();
-//       }
-//     }
-  
-//     function textWriter() {
-//       if (j < animateP.length) {
-//         document.querySelector(".textwritter").innerHTML += animateP.charAt(j);
-//         j++;
-//         setTimeout(textWriter, speed);
-//       }
-//     }
+window.addEventListener("DOMContentLoaded", (event) => {
+  var i = 0;
+  var j = 0;
+  var animateText = "Jonghyun Kang";
+  var animateP = "Welcome to this page";
+  var speed = 150;
 
-//     typeWriter();
-
-//   }));
-//   reject(err => console.log(err));
-// });
-
-function buttonAnimate() {
-  var id = null;
-  var id2 = null;
-  const element = document.querySelector(".animate-button");
-  let position = 0;
-
-  clearInterval(id);
-  id = setInterval(botFrame, 50);
-
-  function botFrame() {
-    if (position == 30) {
-      clearInterval(id);
-      id2 = setInterval(topFrame, 50);
+  function typeWriter() {
+    if (i < animateText.length) {
+      document.querySelector(".typewritter").innerHTML += animateText.charAt(i);
+      i++;
+      setTimeout(typeWriter, speed);
     } else {
-      position++;
-      element.style.top = position + "px";
+      textWriter();
     }
+  }
 
-    function topFrame() {
-      if (position == 0) {
-        clearInterval(id2);
-        id = setInterval(botFrame, 50);
+  function textWriter() {
+    if (j < animateP.length) {
+      document.querySelector(".textwritter").innerHTML += animateP.charAt(j);
+      j++;
+      setTimeout(textWriter, speed);
+    }
+  }
+
+  typeWriter();
+
+  function buttonAnimate() {
+    var id = null;
+    var id2 = null;
+    const element = document.querySelector(".animate-button");
+    let position = 0;
+
+    clearInterval(id);
+    id = setInterval(botFrame, 50);
+
+    function botFrame() {
+      if (position == 30) {
+        clearInterval(id);
+        id2 = setInterval(topFrame, 50);
       } else {
-        position--;
+        position++;
         element.style.top = position + "px";
+      }
+
+      function topFrame() {
+        if (position == 0) {
+          clearInterval(id2);
+          id = setInterval(botFrame, 50);
+        } else {
+          position--;
+          element.style.top = position + "px";
+        }
       }
     }
   }
-}
 
-buttonAnimate();
-
-// profileText.then(function(res) {
-//   buttonAnimate();
-// }, function(err) {
-//   console.log(err);
-// });
+  buttonAnimate();
+});
