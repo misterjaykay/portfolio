@@ -1,4 +1,19 @@
+@font-face {
+  font-family: 'PT Serif';
+  src: url("../fonts/PTSerif-Regular.woff") format("woff"), url("..//fonts/PTSerif-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PT Serif Bold';
+  src: url("../fonts/PTSerif-Bold.woff") format("woff"), url("../fonts/PTSerif-Bold.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+}
+
 * {
+  font-family: "PT Serif", sans-serif;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin: 0;
@@ -129,11 +144,19 @@ body {
   cursor: pointer;
 }
 
+.portfolio .flex-container .flex-img-1:hover {
+  opacity: 0.6;
+}
+
 .portfolio .flex-container .flex-img-2 {
   width: 300px;
   -ms-flex-preferred-size: auto;
       flex-basis: auto;
   cursor: pointer;
+}
+
+.portfolio .flex-container .flex-img-2:hover {
+  opacity: 0.6;
 }
 
 .portfolio .flex-container .flex-img-3 {
@@ -142,6 +165,31 @@ body {
       flex-basis: auto;
   padding-left: 10px;
   cursor: pointer;
+}
+
+.portfolio .flex-container .flex-img-3:hover {
+  opacity: 0.6;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal .modal-content {
+  background-color: #FEFEFE;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
 }
 
 .contact .flex-container {

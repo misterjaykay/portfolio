@@ -61,11 +61,18 @@
     <div class="portfolio" id="portfolio">
         <h1 class="font-white text-center">PORTFOLIO</h1>
         <div class="flex-container">
-            <img class="flex-img-1" src="assets/images/stock-watch.png" alt="stock watch">
-            <img class="flex-img-2" src="assets/images/local-grub.png" alt="local grub">
-            <img class="flex-img-3" src="assets/images/refresh-app.png" alt="refresh">
+            <img onclick="onClick(this)" class="flex-img-1" src="assets/images/stock-watch.png" alt="stock watch">
+            <img onclick="onClick(this)" class="flex-img-2" src="assets/images/local-grub.png" alt="local grub">
+            <img onclick="onClick(this)" class="flex-img-3" src="assets/images/refresh-app.png" alt="refresh">
         </div>
     </div>
+
+    <div id="modal" class="modal" onclick="this.style.display='none'">
+        <div class="modal-content">
+            <img id="modal-img" style="width: 100%;">
+        </div>
+    </div>
+
     <div class="contact" id="contact">
         <h1 class="font-white text-center">CONTACT ME</h1>
         <div class="flex-container">
@@ -87,6 +94,21 @@
         </div>
     </div>
 
+    <script>
+        var modal = document.getElementById("modal");
+
+        function onClick(element) {
+            document.getElementById("modal-img").src = element.src;
+            modal.style.display = "block";
+        }
+
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+
+    </script>
     <script src="assets/js/main.js"></script>
 </body>
 
