@@ -56,6 +56,7 @@ body {
       padding: 0px 20px;
 
       a {
+        font-size: 20px;
         text-decoration: none;
         color: $white;
         transition: all 0.3s ease 0s;
@@ -68,6 +69,7 @@ body {
   }
 
   button {
+    font-size: 18px;
     padding: 9px 25px;
     background-color: rgba(0, 136, 169, 1);
     border: none;
@@ -82,8 +84,12 @@ body {
 }
 
 .intro {
+  margin-top: 100px;
   article {
     margin: 100px 20% 0 20%;
+    a {
+      color: $white;
+    }
   }
 }
 
@@ -104,6 +110,7 @@ body {
 }
 
 .portfolio {
+  margin-top: 300px;
   .flex-container {
     margin: 40px auto 0 auto;
     padding: 20px 50px;
@@ -111,6 +118,9 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     // align-items: center;
+
+    position: relative;
+    text-align: center;
 
     .flex-img-1 {
       width: 300px;
@@ -140,6 +150,25 @@ body {
         opacity: 0.6;
       }
     }
+
+    .flex-img-4 {
+      height: 300px;
+      width: 300px;
+      flex-basis: auto;
+      padding-left: 10px;
+      cursor: pointer;
+      &:hover {
+        opacity: 0.6;
+      }
+    }
+
+    .centered {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      visibility: hidden;
+    }
   }
 }
 
@@ -165,6 +194,8 @@ body {
 }
 
 .contact {
+  margin-top: 300px;
+  margin-bottom: 100px;
   .flex-container {
     border-radius:  5px;
     background-color: #f2f2f2;

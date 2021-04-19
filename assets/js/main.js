@@ -57,5 +57,25 @@ window.addEventListener("DOMContentLoaded", (event) => {
 
   buttonAnimate();
 
-
 });
+
+var imgClass = document.querySelector(".flex-img-4");
+var centered = document.querySelector(".centered");
+var modal = document.getElementById("modal");
+
+imgClass.addEventListener("click", function() {
+  centered.style.visibility = "visible";
+  console.log(centered.style.visibility = "visible");
+})
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+    centered.style.visibility = "hidden";
+  }
+}
+
+// window.addEventListener("click", function(event) {
+//   if (event.target == imgClass) {
+//     centered.style.visibility ="hidden";
+//   }
+// })
