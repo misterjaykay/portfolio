@@ -117,6 +117,51 @@ body {
   color: #FFF;
 }
 
+.skills {
+  margin-top: 200px;
+}
+
+.skills i {
+  color: #FFF;
+}
+
+.skills .flex-container {
+  margin: 40px auto 0 auto;
+  padding: 20px 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+.skills .flex-container .flex-img-1 {
+  -ms-flex-preferred-size: auto;
+      flex-basis: auto;
+  padding-right: 50px;
+}
+
+.skills .flex-container .flex-img-2 {
+  -ms-flex-preferred-size: auto;
+      flex-basis: auto;
+  padding-right: 50px;
+}
+
+.skills .flex-container .flex-img-3 {
+  -ms-flex-preferred-size: auto;
+      flex-basis: auto;
+  padding-right: 50px;
+}
+
+.skills .flex-container .flex-img-4 {
+  -ms-flex-preferred-size: auto;
+      flex-basis: auto;
+}
+
 .title {
   margin: 30% 35% 40% 35%;
 }
@@ -134,7 +179,7 @@ body {
 }
 
 .portfolio {
-  margin-top: 300px;
+  margin-top: 200px;
 }
 
 .portfolio .flex-container {
@@ -169,6 +214,16 @@ body {
 
 .portfolio .flex-container .flex-img-1 a {
   text-decoration: none;
+  font-size: 16px;
+  color: #FFF;
+}
+
+.portfolio .flex-container .flex-img-1 a:hover {
+  color: #0088a9;
+}
+
+.portfolio .flex-container .flex-img-1 p {
+  font-size: 18px;
   color: #FFF;
 }
 
@@ -188,6 +243,16 @@ body {
 
 .portfolio .flex-container .flex-img-2 a {
   text-decoration: none;
+  font-size: 16px;
+  color: #FFF;
+}
+
+.portfolio .flex-container .flex-img-2 a:hover {
+  color: #0088a9;
+}
+
+.portfolio .flex-container .flex-img-2 p {
+  font-size: 18px;
   color: #FFF;
 }
 
@@ -208,6 +273,16 @@ body {
 
 .portfolio .flex-container .flex-img-3 a {
   text-decoration: none;
+  font-size: 16px;
+  color: #FFF;
+}
+
+.portfolio .flex-container .flex-img-3 a:hover {
+  color: #0088a9;
+}
+
+.portfolio .flex-container .flex-img-3 p {
+  font-size: 18px;
   color: #FFF;
 }
 
