@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" 
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" 
+        crossorigin="anonymous"/>
     <link rel="stylesheet" href="assets/css/main.css">
     <title>Jonghyun Kang | Front-end Web Developer</title>
 </head>
@@ -18,7 +20,7 @@
     </div>
 
     <div class="navigation">
-        <span>MY NAME</span>
+        <span>JONGHYUN KANG</span>
         <nav>
             <ul>
                 <li><a href="#intro">Intro</a></li>
@@ -67,16 +69,35 @@
     <div class="portfolio" id="portfolio">
         <h1 class="font-white text-center">PORTFOLIO</h1>
         <div class="flex-container">
-            <img onclick="onClick(this)" class="flex-img-1" src="assets/images/stock-watch.png" alt="stock watch">
-            <img onclick="onClick(this)" class="flex-img-2" src="assets/images/local-grub.png" alt="local grub">
-            <img onclick="onClick(this)" class="flex-img-3" src="assets/images/refresh-app.png" alt="refresh">
+            <div class="flex-img-1">
+                <img onclick="onClick(this)" src="assets/images/stockwatch_screenshot.png" alt="stock watch">
+                <p>
+                    <a href="https://github.com/misterjaykay/Stock-Watch"><i class="fab fa-github"></i> Github</a>
+                    <a href="https://misterjaykay.github.io/Stock-Watch/"><i class="fas fa-link"></i> Demo</a>
+                </p>
+            </div>
+            <div class="flex-img-2">
+                <img onclick="onClick(this)" src="assets/images/localgrub_screenshot.png" alt="local grub">
+                <p>
+                    <a href="https://github.com/eplatvoet/localgrub"><i class="fab fa-github"></i> Github</a>
+                    <a href="https://localgrub.herokuapp.com/"><i class="fas fa-link"></i> Demo</a>
+                </p>
+            </div>
+            <div class="flex-img-3">
+                <img onclick="onClick(this)" src="assets/images/refresh_screenshot.png" alt="refresh">
+                <p>
+                    <a href="https://github.com/hihellos/Refresh"><i class="fab fa-github"></i> Github</a>
+                    <a href="https://home-refresh-app.herokuapp.com/"><i class="fas fa-link"></i> Demo</a>
+                </p>
+            </div>
         </div>
-        <div class="flex-container">
+        <!-- commented out old version of modal. -->
+        <!-- <div class="flex-container">
             <img onclick="onClick(this)" class="flex-img-4" src="assets/images/refresh-app.png" alt="refresh 4">
             <div class="centered">Centered</div>
-            <!-- <img onclick="onClick(this)" class="flex-img-4" src="assets/images/refresh-app.png" alt="refresh 4"> -->
-            <!-- <img onclick="onClick(this)" class="flex-img-4" src="assets/images/refresh-app.png" alt="refresh 4"> -->
-        </div>
+            <img onclick="onClick(this)" class="flex-img-4" src="assets/images/refresh-app.png" alt="refresh 4">
+            <img onclick="onClick(this)" class="flex-img-4" src="assets/images/refresh-app.png" alt="refresh 4">
+        </div> -->
     </div>
 
     <div id="modal" class="modal" onclick="this.style.display='none'">

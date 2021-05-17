@@ -153,38 +153,62 @@ body {
 }
 
 .portfolio .flex-container .flex-img-1 {
-  width: 300px;
   -ms-flex-preferred-size: auto;
       flex-basis: auto;
-  padding-right: 10px;
+  padding-right: 25px;
+}
+
+.portfolio .flex-container .flex-img-1 img {
+  width: 350px;
   cursor: pointer;
 }
 
-.portfolio .flex-container .flex-img-1:hover {
+.portfolio .flex-container .flex-img-1 img:hover {
   opacity: 0.6;
+}
+
+.portfolio .flex-container .flex-img-1 a {
+  text-decoration: none;
+  color: #FFF;
 }
 
 .portfolio .flex-container .flex-img-2 {
-  width: 300px;
   -ms-flex-preferred-size: auto;
       flex-basis: auto;
+}
+
+.portfolio .flex-container .flex-img-2 img {
+  width: 350px;
   cursor: pointer;
 }
 
-.portfolio .flex-container .flex-img-2:hover {
+.portfolio .flex-container .flex-img-2 img:hover {
   opacity: 0.6;
+}
+
+.portfolio .flex-container .flex-img-2 a {
+  text-decoration: none;
+  color: #FFF;
 }
 
 .portfolio .flex-container .flex-img-3 {
-  width: 300px;
   -ms-flex-preferred-size: auto;
       flex-basis: auto;
-  padding-left: 10px;
+  padding-left: 25px;
+}
+
+.portfolio .flex-container .flex-img-3 img {
+  width: 350px;
   cursor: pointer;
 }
 
-.portfolio .flex-container .flex-img-3:hover {
+.portfolio .flex-container .flex-img-3 img:hover {
   opacity: 0.6;
+}
+
+.portfolio .flex-container .flex-img-3 a {
+  text-decoration: none;
+  color: #FFF;
 }
 
 .portfolio .flex-container .flex-img-4 {
