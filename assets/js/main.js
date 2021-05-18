@@ -4,6 +4,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
   var animateText = "Jonghyun Kang";
   var animateP = "I am a Front-end Developer, \nDevoted to JavaScript & React \nReliable and Patient \nEnthusiastic \nLoyal and Hard-working \nEnthusiastic Foodie \nHappy Gamer."; 
   var speed = 150;
+  var speedB = 50;
 
   function typeWriter() {
     if (i < animateText.length) {
@@ -19,7 +20,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
     if (j < animateP.length) {
       document.querySelector(".textwritter").innerHTML += animateP.charAt(j);
       j++;
-      setTimeout(textWriter, speed);
+      setTimeout(textWriter, speedB);
     }
   }
 

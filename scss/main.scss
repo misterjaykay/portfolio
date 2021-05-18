@@ -47,7 +47,10 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 30px 10%;
-
+  .brand-name {
+    font-family: $font-Poppins;
+    font-size: 25px;
+  }
   nav {
     list-style: none;
 
@@ -127,7 +130,12 @@ body {
   margin: 30% 35% 40% 35%;
 
   h1 {
-    font-size: 45px;
+    font-family: $font-Poppins;
+    font-size: 55px;
+  }
+  p {
+    font-family: $font-Titil;
+    font-size: 20px;
   }
 }
 
@@ -268,11 +276,17 @@ body {
 .contact {
   margin-top: 300px;
   margin-bottom: 100px;
+  text-align: center;
+
   .flex-container {
     border-radius:  5px;
-    background-color: #f2f2f2;
+    background-color: $black;
     padding: 20px;
-    margin: 40px 30% 0 30%;
+    margin: 40px 35% 0 35%;
+    label {
+      color: $white;
+      font-family: $font-Titil;
+    }
   }
 
  textarea {
@@ -291,7 +305,7 @@ body {
     &[type=text] {
       width: 100%;
       padding: 12px;
-      border: 1px solid #ccc;
+      border: 1px solid $white;
       border-radius: 4px;
       box-sizing: border-box;
       margin-top: 6px;
