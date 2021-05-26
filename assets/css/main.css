@@ -346,48 +346,38 @@ body {
   text-align: center;
 }
 
+.contact i {
+  color: #FFF;
+}
+
 .contact .flex-container {
-  border-radius: 5px;
-  background-color: #000;
-  padding: 20px;
-  margin: 40px 35% 0 35%;
+  margin: 40px auto 0 auto;
+  padding: 20px 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
 }
 
-.contact .flex-container label {
-  color: #FFF;
-  font-family: "Titillium Web", sans-serif;
+.contact .flex-container .flex-img-1 {
+  -ms-flex-preferred-size: auto;
+      flex-basis: auto;
+  padding-right: 50px;
 }
 
-.contact textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
+.contact .flex-container .flex-img-2 {
+  -ms-flex-preferred-size: auto;
+      flex-basis: auto;
+  padding-right: 50px;
 }
 
-.contact input[type=text] {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #FFF;
-  border-radius: 4px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
-}
-
-.contact input[type=submit] {
-  background-color: #0088a9;
-  color: #FFF;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
+.contact .flex-container .flex-img-3 {
+  -ms-flex-preferred-size: auto;
+      flex-basis: auto;
 }
 /*# sourceMappingURL=main.css.map */
