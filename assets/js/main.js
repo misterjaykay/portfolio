@@ -58,7 +58,11 @@ window.addEventListener("DOMContentLoaded", (event) => {
 
   buttonAnimate();
 
-});
+var animateBtn = document.querySelector(".animate-button");
+
+animateBtn.addEventListener("click", function() {
+  window.scrollTo({ top: 0, behavior: `smooth` })
+})
 
 var imgClass = document.querySelector(".flex-img-4");
 var centered = document.querySelector(".centered");
@@ -75,8 +79,4 @@ window.onclick = function(event) {
   }
 }
 
-// window.addEventListener("click", function(event) {
-//   if (event.target == imgClass) {
-//     centered.style.visibility ="hidden";
-//   }
-// })
+});

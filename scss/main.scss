@@ -33,6 +33,7 @@ body {
   color: $white;
   &:hover {
     background-color: rgba(0, 136, 169, 0.8);
+    cursor: pointer;
   }
   .my-float {
     padding-top: 22px;
@@ -74,14 +75,16 @@ body {
   button {
     font-size: 18px;
     padding: 9px 25px;
-    background-color: rgba(0, 136, 169, 1);
+    background-color: rgba(0, 136, 169, 0.8);
     border: none;
     border-radius: 50px;
     cursor: pointer;
     transition: all 0.3 ease 0s;
+    color: $white;
 
     &:hover {
-      background-color: rgba(0, 136, 169, 0.8);
+      // background-color: rgba(0, 136, 169, 0.8);
+      color: $black;
     }
   }
 }
@@ -278,8 +281,14 @@ body {
   margin-bottom: 100px;
   text-align: center;
   i {
+    transition: all 0.3s ease 0s;
     color: $white;
+    &:hover {
+      color: $skyblue;
+    }
   }
+
+
   .flex-container {
     margin: 40px auto 0 auto;
     padding: 20px 50px;
