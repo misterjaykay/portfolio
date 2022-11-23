@@ -14,38 +14,40 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Rowdies&family=Titillium+Web:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/main.css">
-    <title>Jonghyun Kang | Front-end Web Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Jonghyun Kang | Software Engineer</title>
 </head>
 
 <body>
+<div class="homepage-wrapper">
 
-    <div class="button-container">
+    <!-- <div class="button-container hidden md:block">
         <a class="float animate-button">
             <i class="fa fa-arrow-up fa-lg my-float"></i>
         </a>
     </div>
 
-    <div class="navigation">
+    <div class="navigation hidden md:block">
         <span class="brand-name">Jonghyun Kang</span>
         <nav>
-            <ul>
+            <ul class="nav-menu">
                 <li><a href="#intro">Intro</a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
         <a class="cta" href="#contact"><button>Contact Me</button></a>
-    </div>
+    </div> -->
 
     <div class="title">
-        <h1 class="typewritter text-center font-white"></h1>
+        <h1 class="typewritter text-center font-white pb-1 md:pb-2"></h1>
         <p class="textwritter text-center font-white"></p>
     </div>
 
-    <div class="intro" id="intro">
-        <h1 class="font-white text-center">INTRODUCTION</h1>
+    <section class="intro-section" id="intro">
+        <h1 class="font-white text-center intro-title">INTRODUCTION</h1>
         <article class="text-center font-white">
-            <p>
+            <p class="intro-content">
                 I am Jonghyun Kang, a Full Stack (MERN Stack) Web Developer.
                 <br>
                 <br>
@@ -70,63 +72,49 @@
                 </a>
             </p>
         </article>
-    </div>
+    </section>
     
-    <div class="skills">
+    <section class="skills-section">
         <h1 class="font-white text-center">SKILLS</h1>
-        <div class="flex-container">
-            <i class="flex-img-1 fab fa-js-square fa-3x"></i>
-            <i class="flex-img-2 fab fa-html5 fa-3x"></i>
-            <i class="flex-img-3 fab fa-css3-alt fa-3x"></i>
-            <i class="flex-img-4 fab fa-react fa-3x"></i>
+        <div class="flex flex-wrap justify-evenly md:justify-center py-3 md:py-5">
+            <i class="flex-img-1 px-0 md:px-5 fab fa-js-square fa-3x"></i>
+            <i class="flex-img-2 px-0 md:px-5 fab fa-html5 fa-3x"></i>
+            <i class="flex-img-3 px-0 md:px-5 fab fa-css3-alt fa-3x"></i>
+            <i class="flex-img-4 px-0 md:px-5 fab fa-react fa-3x"></i>
         </div>
-        <div class="flex-container"> 
-            <i class="flex-img-1 fab fa-node fa-3x"></i>
-            <i class="flex-img-2 fab fa-bootstrap fa-3x"></i>
-            <i class="flex-img-3 fab fa-git fa-3x"></i>
-            <i class="flex-img-4 fab fa-npm fa-3x"></i>
+        <div class="flex flex-wrap justify-evenly md:justify-center"> 
+            <i class="flex-img-1 px-0 md:px-5 fab fa-node fa-3x"></i>
+            <i class="flex-img-2 px-0 md:px-5 fab fa-bootstrap fa-3x"></i>
+            <i class="flex-img-3 px-0 md:px-5 fab fa-git fa-3x"></i>
+            <i class="flex-img-4 px-0 md:px-5 fab fa-npm fa-3x"></i>
         </div>
-    </div>
+    </section>
 
-    <div class="portfolio" id="portfolio">
-        <h1 class="font-white text-center">PORTFOLIO</h1>
-        <div class="flex-container">
-            <div class="flex-img-1">
-                <img onclick="onClick(this)" src="assets/images/stockwatch_screenshot.png" alt="stock watch">
-                <p>
-                    Stock Watch
-                    <br>
+    <section class="portfolio-section" id="portfolio">
+        <div class="container mx-auto">
+            <h1 class="font-white text-center">PORTFOLIO</h1>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-5 w-11/12 mx-auto">
+                <div class="flex-img-1 text-white text-center pb-10 md:pb-0">
+                    <img onclick="onClick(this)" src="assets/images/stockwatch_screenshot.png" alt="stock watch">
+                    <p class="text-white text-center py-1">Stock Watch</p>
                     <a target="_blank" href="https://github.com/misterjaykay/Stock-Watch"><i class="fab fa-github"></i> Code</a>
                     <a target="_blank" href="https://misterjaykay.github.io/Stock-Watch/"><i class="fas fa-link"></i> Demo</a>
-                </p>
-            </div>
-            <div class="flex-img-2">
-                <img onclick="onClick(this)" src="assets/images/localgrub_screenshot.png" alt="local grub">
-                <p>
-                    Local Grub
-                    <br>
+                </div>
+                <div class="flex-img-2 text-white text-center pb-10 md:pb-0">
+                    <img onclick="onClick(this)" src="assets/images/localgrub_screenshot.png" alt="local grub">
+                    <p class="text-white text-center py-1">Local Grub</p>
                     <a target="_blank" href="https://github.com/eplatvoet/localgrub"><i class="fab fa-github"></i> Code</a>
-                    <a target="_blank" href="https://localgrub.herokuapp.com/"><i class="fas fa-link"></i> Demo</a>
-                </p>
-            </div>
-            <div class="flex-img-3">
-                <img onclick="onClick(this)" src="assets/images/refresh_screenshot.png" alt="refresh">
-                <p>
-                    Refresh
-                    <br>
-                    <a target="_blank" href="https://github.com/hihellos/Refresh"><i class="fab fa-github"></i> Code</a>
+                    <a target="_blank" href="https://localgrub.hgiterokuapp.com/"><i class="fas fa-link"></i> Demo</a>
+                </div>
+                <div class="flex-img-3 text-white text-center">
+                    <img onclick="onClick(this)" src="assets/images/refresh_screenshot.png" alt="refresh">
+                    <p class="text-white text-center py-1">Refresh</p>
+                    <a class="" target="_blank" href="https://github.com/hihellos/Refresh"><i class="fab fa-github"></i> Code</a>
                     <a target="_blank" href="https://home-refresh-app.herokuapp.com/"><i class="fas fa-link"></i> Demo</a>
-                </p>
+                </div>
             </div>
         </div>
-        <!-- commented out old version of modal. -->
-        <!-- <div class="flex-container">
-            <img onclick="onClick(this)" class="flex-img-4" src="assets/images/refresh-app.png" alt="refresh 4">
-            <div class="centered">Centered</div>
-            <img onclick="onClick(this)" class="flex-img-4" src="assets/images/refresh-app.png" alt="refresh 4">
-            <img onclick="onClick(this)" class="flex-img-4" src="assets/images/refresh-app.png" alt="refresh 4">
-        </div> -->
-    </div>
+    </section>
 
     <div id="modal" class="modal" onclick="this.style.display='none'">
         <div class="modal-content">
@@ -134,7 +122,7 @@
         </div>
     </div>
 
-    <div class="contact" id="contact">
+    <section class="contact-section" id="contact">
         <h1 class="font-white text-center">CONTACT ME</h1>
         <div class="flex-container">
             <a href="mailto:misterjaykay@gmail.com">
@@ -164,7 +152,7 @@
             </form> -->
 
         </div>
-    </div>
+    </section>
 
     <script>
         var modal = document.getElementById("modal");
@@ -182,6 +170,7 @@
 
     </script>
     <script src="assets/js/main.js"></script>
+</div>
 </body>
 
 </html>

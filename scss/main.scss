@@ -1,5 +1,7 @@
 @import "./variables";
 @import "./font";
+@import "./utils";
+@import "./winter";
 
 * {
   font-family: "PT Serif", sans-serif;
@@ -8,7 +10,7 @@
   padding: 0;
 }
 
-body {
+.homepage-wrapper {
   background-image: url("../images/background.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
@@ -89,7 +91,7 @@ body {
   }
 }
 
-.intro {
+.intro-section {
   margin-top: 100px;
   article {
     margin: 100px 20% 0 20%;
@@ -99,7 +101,7 @@ body {
   }
 }
 
-.skills {
+.skills-section {
   margin-top: 200px;
   i {
     color: $white;
@@ -130,7 +132,7 @@ body {
 }
 
 .title {
-  margin: 30% 35% 40% 35%;
+  margin: 30% 30% 40% 30%;
 
   h1 {
     font-family: $font-Poppins;
@@ -150,7 +152,7 @@ body {
   text-align: center;
 }
 
-.portfolio {
+.portfolio-section {
   margin-top: 200px;
   .flex-container {
     margin: 40px auto 0 auto;
@@ -276,10 +278,7 @@ body {
   }
 }
 
-.contact {
-  margin-top: 300px;
-  margin-bottom: 100px;
-  text-align: center;
+.contact-section {
   i {
     transition: all 0.3s ease 0s;
     color: $white;
@@ -353,4 +352,24 @@ body {
 //       cursor: pointer;
 //     }
 //   }
+}
+
+@media screen and (max-width: 390px) {
+  .title {
+    margin: 30% 20% 35% 20%;
+    h1 {
+      font-size: 25px;
+    }
+    p {
+      font-size: 13px;
+    }
+  }
+  .intro-section {
+    .intro-title {
+      font-size: 20px;
+    }
+    .intro-content {
+      font-size: 13px;
+    }
+  }
 }

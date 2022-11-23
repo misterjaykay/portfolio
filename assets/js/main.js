@@ -2,7 +2,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
   var i = 0;
   var j = 0;
   var animateText = "Jonghyun Kang";
-  var animateP = "I am a Front-end Developer, \nDevoted to JavaScript & React \nReliable and Patient \nEnthusiastic \nLoyal and Hard-working \nEnthusiastic Foodie \nHappy Gamer."; 
+  var animateP = "I am a Software Engineer, \nDevoted to JavaScript & React \nReliable and Patient \nEnthusiastic \nLoyal and Hard-working \nEnthusiastic Foodie \nHappy Gamer."; 
   var speed = 150;
   var speedB = 50;
 
@@ -80,3 +80,4 @@ window.onclick = function(event) {
 }
 
 });
+
