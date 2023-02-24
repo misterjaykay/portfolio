@@ -26,43 +26,43 @@ window.addEventListener("DOMContentLoaded", (event) => {
 
   typeWriter();
 
-  function buttonAnimate() {
-    var id = null;
-    var id2 = null;
-    const element = document.querySelector(".animate-button");
-    let position = 0;
+  // function buttonAnimate() {
+  //   var id = null;
+  //   var id2 = null;
+  //   const element = document.querySelector(".animate-button");
+  //   let position = 0;
 
-    clearInterval(id);
-    id = setInterval(botFrame, 50);
+  //   clearInterval(id);
+  //   id = setInterval(botFrame, 50);
 
-    function botFrame() {
-      if (position == 30) {
-        clearInterval(id);
-        id2 = setInterval(topFrame, 50);
-      } else {
-        position++;
-        element.style.top = position + "px";
-      }
+  //   function botFrame() {
+  //     if (position == 30) {
+  //       clearInterval(id);
+  //       id2 = setInterval(topFrame, 50);
+  //     } else {
+  //       position++;
+  //       element.style.top = position + "px";
+  //     }
 
-      function topFrame() {
-        if (position == 0) {
-          clearInterval(id2);
-          id = setInterval(botFrame, 50);
-        } else {
-          position--;
-          element.style.top = position + "px";
-        }
-      }
-    }
-  }
+  //     function topFrame() {
+  //       if (position == 0) {
+  //         clearInterval(id2);
+  //         id = setInterval(botFrame, 50);
+  //       } else {
+  //         position--;
+  //         element.style.top = position + "px";
+  //       }
+  //     }
+  //   }
+  // }
 
-  buttonAnimate();
+  // buttonAnimate();
 
-var animateBtn = document.querySelector(".animate-button");
+// var animateBtn = document.querySelector(".animate-button");
 
-animateBtn.addEventListener("click", function() {
-  window.scrollTo({ top: 0, behavior: `smooth` })
-})
+// animateBtn.addEventListener("click", function() {
+//   window.scrollTo({ top: 0, behavior: `smooth` })
+// })
 
 var imgClass = document.querySelector(".flex-img-4");
 var centered = document.querySelector(".centered");

@@ -1,7 +1,6 @@
 @import "./variables";
 @import "./font";
 @import "./utils";
-@import "./winter";
 
 * {
   font-family: "PT Serif", sans-serif;
@@ -132,7 +131,8 @@
 }
 
 .title {
-  margin: 30% 30% 40% 30%;
+  padding-top: 25%;
+  margin: 0 30% 40% 30%;
 
   h1 {
     font-family: $font-Poppins;
@@ -311,7 +311,8 @@
 
 @media screen and (max-width: 390px) {
   .title {
-    margin: 30% 20% 35% 20%;
+    padding-top: 60%;
+    margin: 0 20% 35% 20%;
     h1 {
       font-size: 25px;
     }
@@ -319,12 +320,15 @@
       font-size: 13px;
     }
   }
-  .intro-section {
+  .intro-section, .skills-section, .portfolio-section {
     .intro-title {
       font-size: 20px;
     }
     .intro-content {
       font-size: 13px;
     }
+  }
+  .skills-section, .portfolio-section {
+    margin-top: 60px;
   }
 }
