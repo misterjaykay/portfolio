@@ -1,3 +1,6 @@
+/*  import google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
 @font-face {
   font-family: 'PT Serif';
   src: url("../fonts/PTSerif-Regular.woff") format("woff"), url("..//fonts/PTSerif-Regular.woff2") format("woff2");
@@ -49,7 +52,7 @@
 }
 
 * {
-  font-family: "PT Serif", sans-serif;
+  font-family: 'Poppins', sans-serif;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin: 0;
@@ -57,9 +60,15 @@
 }
 
 .homepage-wrapper {
-  background-image: url("../images/background.jpg");
+  /* background-image: url("../images/background.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
+  background-color: #000; */
+
+  /* background: #1FD6EB;
+  background: --webkit-gradient(to right, #1FD6EB, #B8A5FF);
+  background: linear-gradient(90deg, #1FD6EB, #B8A5FF); */
+
   background-color: #000;
 }
 
@@ -148,8 +157,65 @@
   color: #000;
 }
 
-.intro-section {
-  margin-top: 100px;
+/* navbar styling */
+.navbar{
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  padding: 30px 0;
+  font-family: 'Ubuntu', sans-serif;
+  transition: all 0.3s ease;
+}
+.navbar.sticky{
+  padding: 15px 0;
+  background: #924DFF;
+}
+.navbar .max-width{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.navbar .logo a{
+  color: #fff;
+  font-size: 35px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.navbar .logo a span{
+  color: #924DFF;
+  transition: all 0.3s ease;
+}
+.navbar.sticky .logo a span{
+  color: #fff;
+}
+.navbar .menu li{
+  list-style: none;
+  display: inline-block;
+}
+.navbar .menu li a{
+  display: block;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 25px;
+  transition: color 0.3s ease;
+}
+.navbar .menu li a:hover{
+  color: #924DFF;
+  cursor: pointer;
+}
+.navbar.sticky .menu li a:hover{
+  color: #fff;
+  cursor: pointer;
+}
+
+/* hero section */
+.hero-section .title-container {
+  left: 25%;
+  top: 35%;
+  .title {
+    width: 80%;
+  }
 }
 
 .intro-section article {
@@ -158,10 +224,6 @@
 
 .intro-section article a {
   color: #FFF;
-}
-
-.skills-section {
-  margin-top: 200px;
 }
 
 .skills-section i {
@@ -205,19 +267,19 @@
       flex-basis: auto;
 }
 
-.title {
-  padding-top: 25%;
-  margin: 0 30% 40% 30%;
-}
-
 .title h1 {
   font-family: "Poppins", sans-serif;
   font-size: 55px;
+  font-weight: 600;
+}
+
+.title p span {
+  color: #924DFF;
 }
 
 .title p {
   font-family: "Titillium Web", sans-serif;
-  font-size: 20px;
+  font-size: 28px;
 }
 
 .font-white {
@@ -226,10 +288,6 @@
 
 .text-center {
   text-align: center;
-}
-
-.portfolio-section {
-  margin-top: 200px;
 }
 
 .portfolio-section .flex-container {
@@ -386,7 +444,7 @@
 }
 
 .contact-section i:hover {
-  color: #0088a9;
+  color: #924DFF;
 }
 
 .contact-section .flex-container {
@@ -431,9 +489,9 @@
   .title p {
     font-size: 13px;
   }
-  .intro-section .intro-title, .skills-section .intro-title, .portfolio-section .intro-title {
+  /* .intro-section .intro-title, .skills-section .intro-title, .portfolio-section .intro-title {
     font-size: 20px;
-  }
+  } */
   .intro-section .intro-content, .skills-section .intro-content, .portfolio-section .intro-content {
     font-size: 13px;
   }

@@ -15,6 +15,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Rowdies&family=Titillium+Web:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/main.css">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-7XFT97SS3M"></script>
     <script>
@@ -28,8 +30,6 @@
 </head>
 
 <body>
-<div class="homepage-wrapper">
-
     <!-- <div class="button-container hidden md:block">
         <a class="float animate-button">
             <i class="fa fa-arrow-up fa-lg my-float"></i>
@@ -47,79 +47,93 @@
         </nav>
         <a class="cta" href="#contact"><button>Contact Me</button></a>
     </div> -->
+    <nav class="navbar">
+        <div class="max-width">
+            <div class="logo"><a href="#">JH<span>Kang</span></a></div>
+            <ul class="menu">
+                <!-- <li><a href="#home" class="menu-btn">Home</a></li> -->
+                <li><a href="#about" class="menu-btn">About</a></li>
+                <!-- <li><a href="#services" class="menu-btn">Services</a></li> -->
+                <li><a href="#skills" class="menu-btn">Skills</a></li>
+                <li><a href="#portfolio" class="menu-btn">Portfolio</a></li>
+                <li><a href="#contact" class="menu-btn">Contact</a></li>
+            </ul>
+            <!-- <div class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div> -->
+        </div>
+    </nav>
+    <section class="relative hero-section bg-black h-screen">
+        <div class="absolute title-container">
+            <div class="title">
+                <h1 class="typewritter text-center font-white pb-1 md:pb-2">Hello, My Name is Jonghyun Kang</h1>
+                <p class="textwritter text-center font-white">and I am a <span class="type-element"></span></p>
+            </div>
+        </div>
+    </section>
 
-    <div class="title">
-        <h1 class="typewritter text-center font-white pb-1 md:pb-2"></h1>
-        <p class="textwritter text-center font-white"></p>
-    </div>
-
-    <section class="intro-section" id="intro">
-        <h1 class="font-white text-center intro-title">INTRODUCTION</h1>
-        <article class="text-center font-white">
-            <p class="intro-content">
-                I am Jonghyun Kang, a Full Stack (MERN Stack) Web Developer.
-                <br>
-                <br>
-                As a recent graduate of Rutgers University Coding Boot Camp.
-                I am ecstatic to share my skill that will contribute to this fast changing world.
-                <br>
-                <br>
-                My years of Sales and Marketing background made me an expert in maintaining a balance between business
-                to business relationship.
-                However, my long-term passion towards coding has finally become the reality in my life.
-                And I am now eager to becoming an expert of sharing my newly obsorbed skills.
-                <br>
-                <br>
-                I am actively looking to collaborate or join for any project that involves React.js or JavaScript, which
-                is my strong suit.
-                My personal goal is to polish my React.js skills and learn python.
-                <br>
-                <br>
-                You can also find my portofolio in React version in
-                <a href="https://react-portfolio-jhk.herokuapp.com/">
-                    <span>here</span>
-                </a>
+    <section class="relative intro-section bg-white" id="about">
+        <div class="container mx-auto">
+            <h2 class="text-3xl mb-5 text-black text-center">INTRODUCTION</h2>
+            <p class="text-center text-black w-8/12 mx-auto py-3">
+                I'm currently working as a Software Engineer at Telegraph Creative, focusing on innovative web development projects. 
+                Before this, I freelanced as a Front-end Developer on Upwork, where I specialized in React.js and JavaScript. 
+                These experiences have sharpened my coding skills and allowed me to tackle real-world challenges.
             </p>
-        </article>
+            <p class="text-center text-black w-8/12 mx-auto py-3">
+                Few year ago, graduated from Rutgers University's Coding Boot Camp, where I deepened my knowledge in React.js and JavaScript, setting a strong foundation for my career in tech. 
+                This education, combined with my background in Sales and Marketing, gives me a unique perspective on how to blend business strategy with technology.
+            </p>
+            <p class="text-center text-black w-8/12 mx-auto py-3">
+                I'm keen on projects involving React.js or JavaScript and am also looking to expand my skill set into Python. 
+            </p>
+            <p class="text-center text-black w-8/12 mx-auto py-3">
+                I'm on the lookout for collaborative opportunities that can challenge me and help me grow as a developer. 
+                I bring to the table a mix of technical expertise, a drive for excellence, and a collaborative mindset. 
+                Let's connect and see how we can work together on future tech projects.
+            </p>
+        </div>
     </section>
     
-    <section class="skills-section">
-        <h1 class="font-white text-center intro-title">SKILLS</h1>
-        <div class="flex flex-wrap justify-evenly md:justify-center py-10 md:py-5">
-            <i class="flex-img-1 px-0 md:px-5 fab fa-js-square fa-3x"></i>
-            <i class="flex-img-2 px-0 md:px-5 fab fa-html5 fa-3x"></i>
-            <i class="flex-img-3 px-0 md:px-5 fab fa-css3-alt fa-3x"></i>
-            <i class="flex-img-4 px-0 md:px-5 fab fa-react fa-3x"></i>
-        </div>
-        <div class="flex flex-wrap justify-evenly md:justify-center"> 
-            <i class="flex-img-1 px-0 md:px-5 fab fa-node fa-3x"></i>
-            <i class="flex-img-2 px-0 md:px-5 fab fa-bootstrap fa-3x"></i>
-            <i class="flex-img-3 px-0 md:px-5 fab fa-git fa-3x"></i>
-            <i class="flex-img-4 px-0 md:px-5 fab fa-npm fa-3x"></i>
+    <section class="skills-section bg-black" id="skills">
+        <div class="container mx-auto">
+            <h2 class="text-3xl mb-5 font-white text-center">SKILLS</h2>
+            <div class="flex flex-wrap justify-evenly md:justify-center py-10 md:py-5">
+                <i class="flex-img-1 px-0 md:px-5 fab fa-js-square fa-3x"></i>
+                <i class="flex-img-2 px-0 md:px-5 fab fa-html5 fa-3x"></i>
+                <i class="flex-img-3 px-0 md:px-5 fab fa-css3-alt fa-3x"></i>
+                <i class="flex-img-4 px-0 md:px-5 fab fa-react fa-3x"></i>
+            </div>
+            <div class="flex flex-wrap justify-evenly md:justify-center"> 
+                <i class="flex-img-1 px-0 md:px-5 fab fa-node fa-3x"></i>
+                <i class="flex-img-2 px-0 md:px-5 fab fa-bootstrap fa-3x"></i>
+                <i class="flex-img-3 px-0 md:px-5 fab fa-git fa-3x"></i>
+                <i class="flex-img-4 px-0 md:px-5 fab fa-npm fa-3x"></i>
+            </div>
         </div>
     </section>
 
-    <section class="portfolio-section" id="portfolio">
+    <section class="portfolio-section bg-white" id="portfolio">
         <div class="container mx-auto">
-            <h1 class="font-white text-center pb-5 md:pb-5 intro-title">PORTFOLIO</h1>
+            <h2 class="text-3xl mb-5 text-black text-center pb-5 md:pb-5">PORTFOLIO</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-5 w-11/12 mx-auto">
-                <div class="flex-img-1 text-white text-center px-5 md:px-0 pb-10 md:pb-0">
+                <div class="flex-img-1 text-black text-center px-5 md:px-0 pb-10 md:pb-0">
                     <img onclick="onClick(this)" src="assets/images/stockwatch_screenshot.png" alt="stock watch">
-                    <p class="text-white text-center py-1">Stock Watch</p>
-                    <a target="_blank" href="https://github.com/misterjaykay/Stock-Watch"><i class="fab fa-github"></i> Code</a>
-                    <a target="_blank" href="https://misterjaykay.github.io/Stock-Watch/"><i class="fas fa-link"></i> Demo</a>
+                    <p class="text-black text-center py-2 text-xl">Stock Watch</p>
+                    <a class="pr-3" target="_blank" href="https://github.com/misterjaykay/Stock-Watch"><i class="fab fa-github"></i> <span class="text-lg">Code</span></a>
+                    <a target="_blank" href="https://misterjaykay.github.io/Stock-Watch/"><i class="fas fa-link"></i> <span class="text-lg">Demo</span></a>
                 </div>
-                <div class="flex-img-2 text-white text-center px-5 md:px-0 pb-10 md:pb-0">
+                <div class="flex-img-2 text-black text-center px-5 md:px-0 pb-10 md:pb-0">
                     <img onclick="onClick(this)" src="assets/images/localgrub_screenshot.png" alt="local grub">
-                    <p class="text-white text-center py-1">Local Grub</p>
-                    <a target="_blank" href="https://github.com/eplatvoet/localgrub"><i class="fab fa-github"></i> Code</a>
-                    <a target="_blank" href="https://localgrub.hgiterokuapp.com/"><i class="fas fa-link"></i> Demo</a>
+                    <p class="text-black text-center py-2 text-xl">Local Grub</p>
+                    <a class="pr-3" target="_blank" href="https://github.com/eplatvoet/localgrub"><i class="fab fa-github"></i> <span class="text-lg">Code</span></a>
+                    <a target="_blank" href="https://localgrub.hgiterokuapp.com/"><i class="fas fa-link"></i> <span class="text-lg">Demo</span></a>
                 </div>
-                <div class="flex-img-3 text-white text-center px-5 md:px-0">
+                <div class="flex-img-3 text-black text-center px-5 md:px-0">
                     <img onclick="onClick(this)" src="assets/images/refresh_screenshot.png" alt="refresh">
-                    <p class="text-white text-center py-1">Refresh</p>
-                    <a class="" target="_blank" href="https://github.com/hihellos/Refresh"><i class="fab fa-github"></i> Code</a>
-                    <a target="_blank" href="https://home-refresh-app.herokuapp.com/"><i class="fas fa-link"></i> Demo</a>
+                    <p class="text-black text-center py-2 text-xl">Refresh</p>
+                    <a class="pr-3" target="_blank" href="https://github.com/hihellos/Refresh"><i class="fab fa-github"></i> <span class="text-lg">Code</span></a>
+                    <a target="_blank" href="https://home-refresh-app.herokuapp.com/"><i class="fas fa-link"></i> <span class="text-lg">Demo</span></a>
                 </div>
             </div>
         </div>
@@ -131,35 +145,20 @@
         </div>
     </div>
 
-    <section class="contact-section" id="contact">
-        <h1 class="font-white text-center intro-title">CONTACT ME</h1>
-        <div class="flex-container">
-            <a href="mailto:misterjaykay@gmail.com">
-                <i class="flex-img-1 fa-3x far fa-envelope"></i>
-            </a>
-            <a target="_blank" href="https://www.linkedin.com/in/jonghyunkang/">
-                <i class="flex-img-2 fa-3x fab fa-linkedin"></i>
-            </a>
-            <a target="_blank" href="https://github.com/misterjaykay">
-                <i class="flex-img-3 fa-3x fab fa-github"></i>
-            </a>
-
-            <!-- PHP form for future -->
-            <!-- <form>
-
-                <label for="firstname">First Name</label>
-                <input name="firstname" type="text" placeholder="First Name">
-
-                <label for="lastname">Last Name</label>
-                <input name="lastname" type="text" placeholder="Last Name">
-
-                <label for="yourmessage">Your Message</label>
-                <textarea id="subject" name="yourmessage" placeholder="Type Your Message"
-                    style="height:200px"></textarea>
-
-                <input type="submit" value="Submit">
-            </form> -->
-
+    <section class="contact-section bg-black" id="contact">
+        <div class="container mx-auto relative">
+            <h2 class="text-3xl mb-5 font-white text-center">CONTACT</h2>
+            <div class="flex flex-wrap justify-center ">
+                <a class="email mx-3" href="mailto:misterjaykay@gmail.com">
+                    <i class="flex-img-1 fa-2x far fa-envelope"></i>
+                </a>
+                <a class="linkedin mx-3" target="_blank" href="https://www.linkedin.com/in/jonghyunkang/">
+                    <i class="flex-img-2 fa-2x fab fa-linkedin"></i>
+                </a>
+                <a class="github mx-3" target="_blank" href="https://github.com/misterjaykay">
+                    <i class="flex-img-3 fa-2x fab fa-github"></i>
+                </a>
+            </div>
         </div>
     </section>
 
@@ -177,9 +176,12 @@
             }
         }
 
+        var typed = new Typed('.type-element', {
+            strings: ["Full Stack Developer.", "Software Engineer.", "JavaScript Lover", "Foodies", "Happy Gamer"],
+            typeSpeed: 80
+        });
     </script>
     <script src="assets/js/main.js"></script>
-</div>
 </body>
 
 </html>
