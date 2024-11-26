@@ -28,6 +28,13 @@
 }
 
 @media screen and (max-width: 767px) {
+  .hero-section .title-container {
+    left: 0 !important;
+    top: 25% !important;
+    /* .title {
+      width: 80%;
+    } */
+  }
   section {
     padding: 60px 0;
   }
@@ -169,6 +176,7 @@
 .navbar.sticky{
   padding: 15px 0;
   background: #924DFF;
+  top: 0px;
 }
 .navbar .max-width{
   display: flex;

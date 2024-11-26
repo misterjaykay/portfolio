@@ -81,20 +81,30 @@ window.onclick = function(event) {
 
 });
 
-$(document).ready(function(){
-  $(window).scroll(function(){
-      // sticky navbar on scroll script
-      if(this.scrollY > 20){
+$(document).ready(function() {
+  $(window).scroll(function() {
+
+      if (this.scrollY > 20) {
           $('.navbar').addClass("sticky");
-      }else{
+      } else {
           $('.navbar').removeClass("sticky");
       }
       
-      // scroll-up button show/hide script
-      if(this.scrollY > 500){
+      if (this.scrollY > 500) {
           $('.scroll-up-btn').addClass("show");
-      }else{
+      } else {
           $('.scroll-up-btn').removeClass("show");
       }
+  });
+});
+
+$(document).ready(function() {
+  $('.menu-btn').click(function(event) {
+    event.preventDefault();
+    const target = $(this).attr('href');
+    
+    $('html, body').animate({
+      scrollTop: $(target).offset().top
+    }, 800); // Adjust the animation speed as needed
   });
 });
